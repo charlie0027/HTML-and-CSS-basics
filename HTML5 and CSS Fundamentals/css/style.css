@@ -1,0 +1,297 @@
+body{
+    display: grid;
+    grid-template-columns: 65% auto;
+    grid-template-rows: 75px auto auto auto auto auto 50px;
+    grid-template-areas: "nav nav"
+                         "home aside"
+                         "water side"
+                         "rice rice"
+                         "egg side3"
+                         "forms forms"
+                         "footer footer";
+    margin: 0;
+    padding: 0;
+}
+
+.nav{
+    grid-area: nav;
+    background-color: rgba(249, 105, 14, 0.8);
+    box-shadow: -2px 5px 10px gray;
+}
+
+.home{
+    grid-area: home;
+    margin: 0;
+    padding: 25%;
+}
+
+.aside{
+    grid-area: aside;
+    margin: 15px 0px 15px 10px;
+    padding: 20px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: rgb(224, 223, 220);
+    box-shadow: -8px 10px 5px gray;
+    font-family: 'High Tower Text', Times, serif;
+}
+
+.footer{
+    bottom: 0;
+    font-size: 15px;
+    grid-area: footer;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    text-align: center;
+    align-items: center; 
+    color: antiquewhite;
+    background-color: rgba(249, 105, 14, 0.8);
+    box-shadow: -2px 5px 10px gray;
+    
+}
+
+.navList{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+    height: 100%;
+}
+
+.navItem{
+    text-decoration: none;
+    margin: 0 30px;
+    color: antiquewhite;
+}
+
+.logo{
+    padding: 0;
+}
+
+.title{
+    margin-top: -1%;
+    padding: 0;
+    font-family: fantasy;
+    color: rgba(249, 105, 14, 0.8);
+    font-size: 50px;
+    
+}
+
+.quote{
+    margin-top: -10%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: darkgrey;
+}
+
+.aside h1{
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.tooltip {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    right: 105%;
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgba(249, 105, 14, 0.8);
+    color: black;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.aside h4 blockquote{
+    padding-top:0;
+    margin-top: 0;
+    color: rgb(124, 136, 136)
+}
+
+
+.water{
+    padding: 20px;
+    margin: 20px 0px 0px 0px;
+    grid-area: water;
+    background-color: rgba(255, 235, 205, 0.8);
+
+}
+
+.water h1{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+table{
+    border:1px solid black;
+}
+
+table tr td,th{
+    text-align: center;
+    border:1px solid black;
+    width: 10rem;
+}
+
+tr{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.water h2,li{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.side{
+    grid-area: side;
+    margin: 20px 0px 0px 0px;
+    background-color: rgba(255, 235, 205, 0.8);
+}
+
+.side figure{
+    margin: 0;
+    width: 300px;
+    margin: auto;
+    margin-top: 25%;
+}
+
+.side figcaption{
+    text-align: center;
+}
+figure {
+    width: 30%;
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    text-indent: 0;
+    border: thin silver solid;
+    margin: 0.5em;
+    padding: 0.5em;
+    background-color: white;
+}
+img.scaled {
+    width: 100%;
+}
+
+.rice1 h1{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+.rice{
+    padding: 20px;
+    grid-area: rice;
+    display: flex;
+}
+
+.rice .rice1:nth-child(1){
+    padding-left: 40px;
+    width:65%;
+    order: 2;
+}
+
+.rice .side2:nth-child(2){
+    width:35%;
+    order: 1;
+}
+
+.rice1 h2,li{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.side2 figure{
+    margin: 0;
+    width: 300px;
+    margin: auto;
+    margin-top: 25%;
+    background-color: rgba(255, 235, 205, 0.8);
+}
+
+.egg{
+    grid-area: egg;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgba(255, 218, 185, 0.7);
+    padding: 20px;
+}
+
+.egg h1{  
+    text-align: center;
+    font-size: 30px;
+}
+
+.side3{
+    grid-area: side3;
+    background-color: rgba(255, 218, 185, 0.7);
+}
+
+.side3 figure{
+    margin: 0;
+    width: 300px;
+    margin: auto;
+    margin-top: 25%;
+    background-color: white;
+}
+
+.forms{
+    grid-area: forms;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.forms h1{
+    text-align: center;
+}
+
+.formbox{
+    width: 50%;
+
+}
+
+.formbox label h4{
+    font-size: 20px;
+    margin-bottom: 0;
+    text-align: left;
+    cursor: pointer;
+}
+
+.formbox input,textarea{
+    width: 100%;
+    outline: none;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px gray;
+    padding: 5px;
+}
+
+.formbox input:placeholder-shown, textarea:placeholder-shown{
+    font-style: italic;
+}
+
+.formbox #submit{
+    width: 15%;
+    cursor: pointer;
+}
+
+
+
